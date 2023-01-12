@@ -10,12 +10,12 @@ import streamlit as st
 
 
 def save_uploadedfile(uploadedfile): #Fonction appelée pour s'assurer du bon format du fichier audio
-    with open(os.path.join("./Sound_File/", uploadedfile.name), "wb") as f:
+    with open(os.path.join("prediction_streamlit/Sound_File/", uploadedfile.name), "wb") as f:
         f.write(uploadedfile.getbuffer())
     return st.success("Saved File:{} to Data".format(uploadedfile.name))
 
 def main():
-    model = keras.models.load_model('prediction_streamlit/models/2023-01-11-22-59-32') #Charger le modèle keras
+    model = keras.models.load_model('./models/2023-01-11-22-59-32') #Charger le modèle keras
     feature_list = [] #Création des listes utilisées pour la prediction
     Name_list=[]
 

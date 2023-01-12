@@ -18,7 +18,12 @@ In the folder `./prediction_streamlit` :
 
 - Put the files you want to test the listenability in the "Sound_files" file
 
-- Run with python the file Prediction.py
+- Open a terminal at `./Audio_Sample_Listenable/prediction_streamlit` and run the app with the following command :
+```
+$ streamlit run Prediction.py 
+```
+
+A web page should open.
 
 You can find further informations in the report `Guide de l'application prediction.pdf` present in `./prediction_streamlit` folder.
 
