@@ -46,7 +46,7 @@ $python3 -m unittest discover --top-level-directory=. --start-directory=./prepro
 Data required for tests can be found in `./test_data` 
 
 - `./audio` for .wav files 
-- `./marks` for .xlsx file with obtained by those audio files
+- `./marks` for .xlsx file with marks obtained by those audio files
 
 # Train
 
